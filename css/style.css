@@ -1,0 +1,96 @@
+/*Variables de couleurs*/
+:root{
+    --couleur1: #2D2C2C; /*gris très foncé, utilisé pour le header*/
+    --couleur2: #393939; /*gris foncé, utilisé pour le body*/
+    --couleur3: #242323; /*gris très très foncé, utilisé pour le footer*/
+    --couleur4: #343434;
+}
+
+/*reset des variables propres au navigateur et ajout d'une police pour toute la page*/
+html, body, main, footer, header, ul{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: var(--couleur1);
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+main, html{
+    background-color: var(--couleur2);
+}
+
+main{
+    padding: 20px;
+}
+
+footer{
+    background-color: var(--couleur3);
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+}
+
+address{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+h1, h2, h3, a, li, address, p{
+    color: #FFFFFF;
+}
+
+li{
+    list-style-type: none;
+}
+
+.gap{
+    margin-left: 20px;
+}
+.big-gap{
+    margin-left: 40px;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.bigger-text{
+    font-size: 2rem;
+}
+
+#navbar li{
+    font-size: 1.3rem;
+}
+
+article{
+    background-color: var(--couleur4);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.no-underline {
+    text-decoration: none;
+}
